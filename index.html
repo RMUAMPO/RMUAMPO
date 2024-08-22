@@ -80,11 +80,18 @@
         <h2>Thank you for visiting the website of the Rocky Mount Urban Area MPO.</h2>
         <p class="bold-text">Before proceeding, please read the following Disclaimer and Legal Notice.</p>
         <p class="bold-text">You must agree with the terms and conditions of this disclaimer to enter our site.</p>
-        <p class="regular-text">The Geographic Information Systems (GIS) content, data, and tools (hereinafter referred to as "the Content") provided by this website are public resources intended for general informational purposes. The Content is curated and maintained by various local, state, and federal agencies...</p>
+        <p class="regular-text">The Geographic Information Systems (GIS) content, data, and tools (hereinafter referred to as "the Content") provided by this website are public resources intended for general informational purposes...</p>
         <div class="button-container">
-            <a href="https://www.rmuampo.com" class="button">I agree. Enter MPO site</a>
-            <a href="https://rockymountnc.gov/" class="button">I don't agree. Leave MPO site</a>
+            <a href="https://www.rmuampo.com" class="button" onclick="closeSplashScreen()">I agree. Enter MPO site</a>
+            <a href="https://rockymountnc.gov/" class="button" onclick="closeSplashScreen()">I don't agree. Leave MPO site</a>
         </div>
     </div>
+
+    <script>
+        function closeSplashScreen() {
+            document.getElementById('content-overlay').style.display = 'none';
+            document.getElementById('splash-box').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
